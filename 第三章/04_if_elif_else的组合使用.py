@@ -50,6 +50,6 @@ if int(input("请输入第一次猜想的数字：")) == num:
 elif int(input("不对，再猜一次：")) == num:
     print(f"恭喜你，猜对了，结果为：{num}")
 elif int(input("不对，最后再猜一次：")) == num:
-    print(f"恭喜你，猜对了，结果为：{num}")
+    print(f"恭喜你，最后一次猜对了，结果为：{num}")
 else:
     print(f"很抱歉，猜错次数超出，答案为{num}")

@@ -23,6 +23,35 @@ tuple_list = (2, 6, 3, False, 6, 3, 10)
 #     print(f"while循环遍历到的元组元素：{tuple_list[i]}")
 #     i += 1
 
-# 元组的循环：for循环
-for element in tuple_list:
-    print(f"for循环遍历到的元组元素：{element}")
+# # 元组的循环：for循环
+# for element in tuple_list:
+#     print(f"for循环遍历到的元组元素：{element}")
+
+
+# # 如果修改元组内的内容是否会进行报错
+# my_tuple = (1, 2, "Python", "PHP")
+# my_tuple[0] = 10  # 会进行报错，元组元素不支持再次重新修改
+
+# # 特殊：元组不可以修改，但是可以修改元组内的list列表
+# my_tuple = (1, 2, ["Python", "PHP"], 10)
+# my_tuple[2][0] = "myItem"  # 修改元组里面的list列表内容
+# print(f"修改元组里面list列表后的内容变化：{my_tuple}")
+
+"""
+    元组的基本操作案例:
+        定义一个元组，内容是：("王小明", 11, ["football", "music"])，记录的是一个学生的信息
+        通过元组的方法进行：
+            1、查询其年龄所在的下标位置
+            2、查询学生的姓名
+            3、删除学生爱好中的football
+            4、增加爱好：coding到爱好list内
+"""
+stu_tuple = ("王小明", 11, ["football", "music"])
+index = stu_tuple.index(11)  # 得到学生年龄的下标
+print(f"王小明的年龄在元组中的下标为：{index}")
+name = stu_tuple[0]  # 查询学生的姓名
+print(f"该同学的姓名为：{name}")
+del stu_tuple[2][0]  # 删除学生的篮球爱好
+print(f"王小明的篮球爱好被删除后的信息：{stu_tuple}")
+stu_tuple[2].insert(0, "coding")  # 添加爱好到元组内的list列表内
+print(f"王小明的爱好变为coding后的结果：{stu_tuple}")

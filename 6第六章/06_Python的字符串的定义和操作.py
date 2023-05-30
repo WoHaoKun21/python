@@ -57,9 +57,14 @@ my_str = "China is a powerful country"
 #     print(f"for循环得到的字符串内容：{ele}")
 
 # 练习：
-my_strs = "itPython itCast boxuegu"
+my_strs = "itPython itCast boxStudent"
 # 查找”it“出现次数
 count = my_strs.count("it")
+print(f"字符串{my_strs}中it字符出现的次数为：{count}")
 # 将字符串中的空格替换为|
+new_str = my_strs.replace(" ", "|")  # 将字符串中的空格替换为|
+print(f"{my_strs}字符串的空格被替换为|后的结果：", new_str)
 
 # 按照|将字符串进行分割
+new_str_list = new_str.split("|")  # 将字符串按照|进行分割
+print(f"{new_str}通过|分割后的结果为：{new_str_list}")

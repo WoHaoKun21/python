@@ -60,4 +60,5 @@ for name in staff_info:
     if staff_info[name]["级别"] == 1:
         staff_info[name]["级别"] += 1
         staff_info[name]["工资"] += 1000
-print(f"员工升值加薪后的结果为：{staff_info}")
+
+print(f"员工升值加薪后的结果：{staff_info}")

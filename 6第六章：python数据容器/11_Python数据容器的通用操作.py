@@ -43,12 +43,12 @@ my_dict = {"key": 1, "key2": 2, "key3": 3, "key4": 4, "key5": 5}
 # print(f"集合 转元组的结果是：{tuple(my_set)}")
 # print(f"字典 转元组的结果是：{tuple(my_dict)}")
 
-# 类型转换：容器转字符串
-print(f"列表 转字符串的结果是：{str(my_list)}")
-print(f"元组 转字符串的结果是：{str(my_tuple)}")
-print(f"字符串 转字符串的结果是：{str(my_str)}")
-print(f"集合 转字符串的结果是：{str(my_set)}")
-print(f"字典 转字符串的结果是：{str(my_dict)}")
+# # 类型转换：容器转字符串
+# print(f"列表 转字符串的结果是：{str(my_list)}，转换后的类型为：{type(str(my_list))}")  # 类型已经变为str类型，但是排版样式没有改变
+# print(f"元组 转字符串的结果是：{str(my_tuple)}，转换后的类型为：{type(str(my_tuple))}")  # 类型已经变为str类型，但是排版样式没有改变
+# print(f"字符串 转字符串的结果是：{str(my_str)}，转换后的类型为：{type(str(my_str))}")  # 类型已经变为str类型，但是排版样式没有改变
+# print(f"集合 转字符串的结果是：{str(my_set)}，转换后的类型为：{type(str(my_set))}")  # 类型已经变为str类型，但是排版样式没有改变
+# print(f"字典 转字符串的结果是：{str(my_dict)}，转换后的类型为：{type(str(my_dict))}")  # 类型已经变为str类型，但是排版样式没有改变
 
 # # 类型转换：容器转集合
 # print(f"列表 转集合的结果是：{set(my_list)}")
@@ -57,9 +57,14 @@ print(f"字典 转字符串的结果是：{str(my_dict)}")
 # print(f"集合 转集合的结果是：{set(my_set)}")
 # print(f"字典 转集合的结果是：{set(my_dict)}")
 
-# # sorted容器排序
-# print(f"列表容器排序结果为：{sorted(my_list)}")
-# print(f"元组容器排序结果为：{sorted(my_tuple)}")
-# print(f"字符串容器排序结果为：{sorted(my_str)}")
-# print(f"集合容器排序结果为：{sorted(my_set)}")
-# print(f"字典容器排序结果为：{sorted(my_dict)}")
+# # sorted容器排序：排序完毕后会变成列表对象
+# my_list2 = [5, 6, 2, 4, 3, 1]
+# my_tuple2 = (5, 6, 2, 4, 3, 1)
+# my_str2 = "gecdafb"
+# my_set2 = {5, 6, 2, 4, 3, 1}
+# my_dict2 = {"key4": 4, "key3": 3, "key": 1, "key5": 5, "key2": 2, }
+# print(f"列表容器排序结果为：{sorted(my_list2, reverse=True)}")
+# print(f"元组容器排序结果为：{sorted(my_tuple2)}")
+# print(f"字符串容器排序结果为：{sorted(my_str2)}")
+# print(f"集合容器排序结果为：{sorted(my_set2)}")
+# print(f"字典容器排序结果为：{sorted(my_dict2, reverse=False)}")  # 第二个参数表示排序后的数据时候进行反转

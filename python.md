@@ -613,4 +613,17 @@
     3、__init__.py文件的作用：创建包会默认自动创建的文件，通过这个文件来表示一个文件夹是Python的包，而非普通的文件夹
     4、__all__变量的作用：同模块中学习到的是一个作用，控制import*能够导入的内容
 (5)安装第三方Python包
-    1、
+    1、什么是第三方包：一个包就是一堆同类型功能的集合体。例：
+        科学计算中常用：numpy包；
+        数据分析中常用的：pandas包；
+        大数据计算中常用的：pyspark、apache-flink包
+        图形可视化常用的：matplotlib、pyecharts
+        人工智能常用的：tensorflow
+    2、注意：这些第三方包极大的丰富了Python的生态，提高了开发效率。但是由于是第三方包，所以Python没有内置，需要进行安装才可以导入使用
+    3、安装第三方包：需要用到python内置的pip程序即可
+        ① 安装过程：
+            * 打开命令提示符程序（终端）
+            * 在终端中输入pip install 包名称 / 也可以在PyCharm中进行第三方包的安装
+            * 安装完毕后，可使用import进行导入
+        ② pip install 安装包是通过国外的网进行连接
+            解决：使用”pip install -i https://pypi.tuna.tsinghua.edu.cn/simple 包名称“，通过这个网址去下载包

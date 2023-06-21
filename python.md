@@ -627,3 +627,20 @@
             * 安装完毕后，可使用import进行导入
         ② pip install 安装包是通过国外的网进行连接
             解决：使用”pip install -i https://pypi.tuna.tsinghua.edu.cn/simple 包名称“，通过这个网址去下载包
+
+                    十二、Python第十章：Python数据案例介绍——用来进行代码回忆
+(1)JSON数据格式转换
+    1、什么是JSON
+        ① JSON是一种轻量级的数据交互格式。可以按照JSON指定的格式去组织和封装数据
+        ② JSON本质上是一个带有特定格式的字符串
+    2、主要功能：json就是一种在各个编程语言中流通的数据格式，负责不同编程语言中的数据传递和交互
+    3、Python数据和JSON数据的转换
+        代码：import json
+             data = [{"name": "Tom", "age": 19}, {"name": "Marry", "age": 20}]
+             data = json.dumps(data) 通过json.dumps方法将python数据转换为JSON数据
+             data = json.loads(data) 通过json.loads方法将JSON数据转换为python数据
+(2)
+
+(3)
+
+(4)

@@ -18,5 +18,5 @@ print(f"字符串acedf反转后的结果：{str_reverse('acedf')}")
 print(f"字符串acedf截取后的结果：{substr('acedf', 0, 4)}")
 
 # 包 文件操作方法
-print_file_info("E:/python/9第九章：Python异常、模块与包/异常文件/异.txt")
+print_file_info("E:/python/9第九章：Python异常、模块与包/异常文件/异常.txt")
 append_to_file("E:/python/9第九章：Python异常、模块与包/异常文件/异常2.txt", "\n包添加的数据内容")

@@ -639,7 +639,12 @@
              data = [{"name": "Tom", "age": 19}, {"name": "Marry", "age": 20}]
              data = json.dumps(data) 通过json.dumps方法将python数据转换为JSON数据
              data = json.loads(data) 通过json.loads方法将JSON数据转换为python数据
-(2)
+(2)pyecharts模块
+    1、简介：Echarts是一个由百度开源的数据可视化，凭借着良好的交互性，精巧的表图设计，得到了众多开发者的认可，而Python是门富有表达力的语言，很适合用于数据处理，
+            当数据分析遇上数据可视化时，pyecharts诞生了！
+    2、任务：
+        ① 构建一个基础的折线图
+        ② 使用全局配置项设置属性：set_global_opts
 
 (3)
 
